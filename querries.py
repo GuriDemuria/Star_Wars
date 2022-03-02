@@ -3,7 +3,7 @@ from pprint import pprint as pp
 
 client = pymongo.MongoClient()
 db = client['starwars']
-# print(db) # To check the db currently in
+print(db.characters.find({'_id':'61ec73d9af93851d5f044364'})) # To check the db currently in
 
 # print(db.list_collection_names())  # List all the collections in the db
 # print(db.command({'listCollections': 1, 'filter': {'name': 'characters'}}))    # To show validators for the characters collection
